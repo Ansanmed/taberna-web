@@ -1,15 +1,20 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  HashRouter,
+} from "react-router-dom";
 import Home from "../pages/Home";
 import NotFound from "../pages/NotFound";
 
 const AppRoutes = () => {
   return (
-    <Router basename="/taberna-web">
+    <HashRouter basename="/taberna-web">
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
-    </Router>
+    </HashRouter>
   );
 };
 
