@@ -1,6 +1,7 @@
 .to-bottom {
+  background-color: black;
   position: sticky;
-  bottom: 10px;
+  bottom: 0;
   margin: auto;
   border-top: 1px solid var(--primary-color);
 }

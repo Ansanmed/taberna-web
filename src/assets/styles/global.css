@@ -82,3 +82,33 @@ body {
   border-color: var(--primary-hover-color);
   color: var(--primary-hover-color);
 }
+
+.fade-in {
+  animation: fadeIn 3s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-out {
+  animation: fadeOut 3s ease-in-out forwards;
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.delay-3s {
+  animation-delay: 3s;
+}
